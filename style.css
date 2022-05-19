@@ -131,6 +131,7 @@ body {
   width: 80%;
   color: var(--text-color);
   line-height: 1.5;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -186,5 +187,8 @@ body {
   .timeline .timeline-container .timeline-card:hover::before,
   .timeline .timeline-container .timeline-card:focus::before {
     background-color: var(--primary-color);
+  }
+  .question {
+    font-size: 1rem;
   }
 }
