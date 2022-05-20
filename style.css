@@ -21,13 +21,14 @@ body {
   min-height: 100vh;
   width: 100%;
   display: grid;
+  line-height: 1.5;
   place-items: center;
-  padding-block: 60px;
+  padding-block: 44px;
   background-color: var(--background-color);
 }
 
 .title-container {
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   color: var(--text-color);
 }
@@ -37,7 +38,7 @@ body {
 }
 
 .title-container p {
-  margin-top: 1.5rem;
+  margin-top: 0.875rem;
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -82,13 +83,6 @@ body {
   font-weight: 300;
 }
 
-.timeline-content .step {
-  font-size: 12px;
-  font-weight: 300;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-}
-
 .list-progate {
   display: flex;
   flex-direction: column;
@@ -97,6 +91,10 @@ body {
   line-height: 1.5;
   font-weight: 300;
 }
+
+/* .items.progate{
+
+} */
 
 .choice {
   margin-bottom: 0.5rem;
@@ -109,10 +107,15 @@ body {
   text-transform: uppercase;
 }
 
+.small-span {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .btn {
   text-decoration: none;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  margin-block: 2.5rem;
   color: var(--text-color);
   text-transform: uppercase;
   font-weight: 700;
@@ -136,6 +139,12 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    padding-block: 60px;
+  }
+  .title-container {
+    margin-bottom: 3rem;
+  }
   .timeline:before {
     content: '';
     position: absolute;
@@ -180,13 +189,12 @@ body {
     transform: translate(-50%, -50%);
     left: -30px;
   }
-  .timeline-content .step {
-    position: absolute;
-    top: -30px;
-  }
   .timeline .timeline-container .timeline-card:hover::before,
   .timeline .timeline-container .timeline-card:focus::before {
     background-color: var(--primary-color);
+  }
+  .btn {
+    margin-block: 3rem;
   }
   .question {
     font-size: 1rem;
